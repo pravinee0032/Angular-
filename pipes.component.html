@@ -1,0 +1,14 @@
+
+<div class="container">
+
+    <P>{{msg | uppercase}} &nbsp;</P>
+    <p>{{str | lowercase}}&nbsp;&nbsp;</p>
+    <p>{{price |currency:'&#8377;'}}</p>
+    <p>{{mfd | date:'shortdate'}}</p>
+   <p></p> {{mfd |date:'dd-MMMM-yyyy'}}
+   <p>    {{mfd | date:'longdate'}}</p>
+   <p>{{number | percent}}</p>
+   <pre>{{product |json}}</pre>
+   <p>{{msg | slice:0:7}}</p>
+   <p>{{msg | sentencecase1}}</p>
+</div>

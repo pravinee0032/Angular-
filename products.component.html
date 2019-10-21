@@ -1,0 +1,21 @@
+<div class="container">
+    <app-filter [All]="All" [Electronics]="Electronics" [shoes]="shoes"
+    (ComponentChanged)="OnCategoryChanged($event)"></app-filter>
+    <h2>Product List</h2>
+    <table class="table table-hover">
+        <thead>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let product of data">
+                <tr *ngIf="SelectedValue=='All' || SelectedValue== product.Category">
+                    <td>{{product.Name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.Category}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+    <fieldset>
+        <legend>Login</legend>
+        <dl>
+            <dt>UserName</dt>
+            <dd><input type="text"></dd>
+            <dt>Password</dt>
+            <dd><input type="password"></dd>
+            <dt>Verify Code</dt>
+            <dd>
+                <div>
+                    {{code}}
+                </div>
+                <div>
+                    <button (click) = "NewCode()">Get NewCode</button>
+                </div>
+            </dd>
+        </dl>
+        <button>Login</button>
+    </fieldset>
+</div>
